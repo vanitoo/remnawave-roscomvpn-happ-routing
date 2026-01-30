@@ -291,7 +291,7 @@ rules:
 - AND,((NETWORK,UDP),(OR,((DST-PORT,443),(DST-PORT,853)))),REJECT
 - OR,((RULE-SET,category-ads),(RULE-SET,win-spy)),REJECT
 - OR,((RULE-SET,torrent-clients),(RULE-SET,torrent-domains)),DIRECT
-- PROCESS-NAME,Discord.exe,💬 Discord.exe
+- OR,((PROCESS-NAME,Discord.exe),(PROCESS-NAME,discord),(PROCESS-NAME,vesktop)),💬 Discord.exe
 - RULE-SET,twitch-ads,PROXY
 - RULE-SET,games,🎮 Игры
 - RULE-SET,ru-apps,DIRECT
