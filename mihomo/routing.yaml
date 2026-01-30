@@ -1,3 +1,9 @@
+proxy-providers:
+  prov:
+    type: http
+    url: <ВВЕДИТЕ URL ВАШИХ ПРОКСИ В ФОРМАТЕ MIHOMO>
+    path: ./provider/proxies.yaml
+    interval: 86400
 mixed-port: 7890
 mode: rule
 log-level: silent
@@ -82,12 +88,6 @@ find-process-mode: strict
 profile:
   store-selected: true
   store-fake-ip: true
-proxy-providers:
-  prov:
-    type: http
-    url: <ВВЕДИТЕ URL ВАШИХ ПРОКСИ В ФОРМАТЕ MIHOMO>
-    path: ./provider/proxies.yaml
-    interval: 86400
 proxy-groups:
 - name: 🛡️ VPN
   icon: https://cdn.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
