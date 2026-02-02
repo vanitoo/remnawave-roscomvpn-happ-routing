@@ -65,7 +65,11 @@ dns:
   use-hosts: true
   use-system-hosts: true
   ipv6: false
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - rule-set:private-domains
   default-nameserver:
   - 77.88.8.8
   proxy-server-nameserver:
@@ -88,7 +92,6 @@ sniffer:
       - 8443
   skip-dst-address:
   - 224.0.0.0/3
-  - 0.0.0.0/8
   - 10.0.0.0/8
   - 127.0.0.0/8
   - 100.64.0.0/10
@@ -105,7 +108,7 @@ sniffer:
   - ff00::/8
   - fe80::/10
   - ::/127
-find-process-mode: strict
+find-process-mode: always
 profile:
   store-selected: true
   store-fake-ip: true
