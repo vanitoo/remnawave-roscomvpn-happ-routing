@@ -1,7 +1,7 @@
 {
     "Name": "RoscomVPN",
     "GlobalProxy": "true",
-    "UseChunkFiles": "true",
+    "UseChunkFiles": "false",
     "RemoteDns": "8.8.8.8",
     "DomesticDns": "77.88.8.8",
     "RemoteDNSType": "DoU",
@@ -12,7 +12,7 @@
     "DomesticDNSIP": "77.88.8.8",
     "Geoipurl": "https://github.com/hydraponique/roscomvpn-geoip/releases/download/202602030113/geoip.dat",
     "Geositeurl": "https://github.com/hydraponique/roscomvpn-geosite/releases/download/202601291556/geosite.dat",
-    "LastUpdated": "1770080000",
+    "LastUpdated": "1770140000",
     "DnsHosts": {},
     "RouteOrder": "block-proxy-direct",
     "DirectSites": [],
