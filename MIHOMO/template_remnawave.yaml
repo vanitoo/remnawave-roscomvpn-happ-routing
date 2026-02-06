@@ -189,7 +189,7 @@ rule-providers:
     type: http
     behavior: domain
     format: mrs
-    url: https://raw.githubusercontent.com/hydraponique/roscomvpn-geosite/release/mihomo/torrent-domains.mrs
+    url: https://raw.githubusercontent.com/hydraponique/roscomvpn-geosite/release/mihomo/torrent.mrs
     path: ./ruleset/torrent-domains.mrs
     interval: 86400
   twitch-ads:
